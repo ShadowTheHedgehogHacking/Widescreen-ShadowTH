@@ -1,0 +1,53 @@
+{
+  "ModId": "shadowthehedgehog.guis.widescreenrevamp",
+  "ModName": "ShTH: Widescreen Revamp",
+  "ModAuthor": "dreamsyntax",
+  "ModVersion": "0.8.0",
+  "ModDescription": "Modified files for widescreen support in Shadow The Hedgehog. Mainly modifications to GNCPs.   NOTE: Gecko Codes are necessary to run this with a better widescreen effect. Go to the mod folder and check \u0022GeckoCodes.txt\u0022, Copy-Paste these codes to your Dolphin Emulator",
+  "ModDll": "",
+  "ModIcon": "Preview.png",
+  "ModR2RManagedDll32": "",
+  "ModR2RManagedDll64": "",
+  "ModNativeDll32": "",
+  "ModNativeDll64": "",
+  "IsLibrary": false,
+  "ReleaseMetadataFileName": "shadowthehedgehog.gamefiles.widescreenrevamp.ReleaseMetadata.json",
+  "PluginData": {
+    "GitHubRelease": {
+      "UserName": "https://github.com/dreamsyntax",
+      "RepositoryName": "https://github.com/ShadowTheHedgehogHacking/Widescreen-ShadowTH",
+      "UseReleaseTag": true,
+      "AssetFileName": "Mod.zip"
+    },
+    "GitHubDependencies": {
+      "IdToConfigMap": {
+        "reloaded.universal.redirector": {
+          "Config": {
+            "UserName": "Reloaded-Project",
+            "RepositoryName": "Reloaded.Universal.Redirector",
+            "UseReleaseTag": false,
+            "AssetFileName": ""
+          },
+          "ReleaseMetadataName": "Reloaded.Universal.Redirector.ReleaseMetadata.json"
+        },
+        "reloaded.sharedlib.hooks": {
+          "Config": {
+            "UserName": "Reloaded.SharedLib.Hooks.ReloadedII",
+            "RepositoryName": "Sewer56",
+            "UseReleaseTag": true,
+            "AssetFileName": "reloaded.sharedlib.hooks.zip"
+          },
+          "ReleaseMetadataName": "Sewer56.Update.ReleaseMetadata.json"
+        }
+      }
+    }
+  },
+  "IsUniversalMod": false,
+  "ModDependencies": [
+    "reloaded.universal.redirector"
+  ],
+  "OptionalDependencies": [],
+  "SupportedAppId": [
+    "dolphin.exe"
+  ]
+}
