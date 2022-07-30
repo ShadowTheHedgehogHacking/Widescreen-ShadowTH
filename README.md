@@ -1,5 +1,6 @@
 # Widescreen-ShadowTH
 Modified files for widescreen support in Shadow The Hedgehog. Mainly modifications to GNCPs
+Alternatively, there's a [Reloaded II](http://github.com/Reloaded-Project/Reloaded-II) version. Check the wiki [here](https://github.com/RaphaelDrewBoltman/Widescreen-ShadowTH/wiki/How-to-use-and-play-Widescreen-ShadowTH-on-Reloaded-II-Mod-Loader) to know how to add and play this mod to Reloaded II.
 
 ## Usage
 1. Merge & Overwrite files from 'csdFiles' with extracted game's csdFiles
