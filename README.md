@@ -6,24 +6,23 @@ Modified files for widescreen support in Shadow The Hedgehog. Mainly modificatio
 2. Use relevant gecko-codes-widescreen-patches.txt codes or use the all-in-one (singleplayer only) code here:
 
 ```
-$Advanced Full Widescreen v3.1 with UI/GNCP Code [dreamsyntax, Dolphin Wiki]
+$Advanced Full Widescreen v3.2 with UI/GNCP Code [dreamsyntax, Dolphin Wiki]
 045f67a0 c1700000
 045f67a8 44250000
 045f67e0 442f0000
 045f67d0 c2600000
 045f67f0 c2780000
-044AB5CC C2DC0000
-044AB5D0 43070000
-C20BC8D8 00000009
+04343228 4E800020
+044AB5CC 43000000
+C20BC8D8 00000008
 C3629918 81E10094
 3E00800B 6210C4B0
-7C0F8000 4082002C
+7C0F8000 40820028
 3DE08057 61EF5F1C
 81EF0000 2C0F0002
 3DE0804A 61EFB5CC
-41820008 40820008
-39EF0004 C36F0000
-60000000 00000000
+C36F0000 41820008
+FF60D850 00000000
 c20622a8 00000006
 3dc08057 3de03f40
 91eee098 3de0bf40
