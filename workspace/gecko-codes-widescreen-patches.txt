@@ -1,4 +1,4 @@
-Note, the code in the README is all of the below combined into one code.
+Note, the code is the singleplayer optimized version of this code breakdown. DO NOT USE IN COMBINATION WITH IT!
 
 
 $Widescreen v4 UI GNCP Adjustment [dreamsyntax]
@@ -20,6 +20,26 @@ C36F0000 41820008
 FF60D850 00000000
 *Patches the hardcoded remaining UI elements to be true 16:9 without weirdness
 *Requires 16:9 GNCP patches
+
+$Widescreen v5 Shared Function Call [dreamsyntax]
+06519F60 00000034
+3DC08057 3DE03F40
+91EEE098 3DE0BF40
+91EEE084 7E0802A6
+4E800421 7E0803A6
+3DE03F80 91EEE098
+3DE0BF80 91EEE084
+4E800020 00000000
+* And below writes for calling it
+040622A8 484B7CB9
+04062300 484B7C61
+04036764 484E37FD
+0436328C 481B6CD5
+04363180 481B6DE1
+040BCA54 4845D50D
+04345D98 481D41C9
+
+
 
 $16by9 LockOn Sprite Fix for Singleplayer [dreamsyntax]
 C20622A8 00000006
