@@ -1,13 +1,13 @@
 # Widescreen-ShadowTH
-Modified files for widescreen support in Shadow The Hedgehog. Mainly modifications to GNCPs
+Modified files for proper widescreen support in Shadow The Hedgehog (USA GameCube version GUPE8P). 
+Provides widescreen without any UI stretching wierdness
 
 ## Usage
-1. Merge & overwrite files from 'csdFiles' with extracted game's csdFiles. [You can read how to extract and play/rebuild the game by clicking here.](https://github.com/ShadowTheHedgehogHacking/ShdTH-Reloaded#extraction-of-game--fst-format)
+1. Merge & overwrite files from 'files' with extracted game's 'files'. [You can read how to extract and play/rebuild the game by clicking here.](https://github.com/ShadowTheHedgehogHacking/ShdTH-Reloaded#extraction-of-game--fst-format)
 2. Use the all-in-one (singleplayer only) code below.
-3. (Optional) See gecko-codes-widescreen-patches.txt for code breakdown and splitscreen/two player hack variants
 
 ```
-$Advanced Full Widescreen v5 (beta) with UI/GNCP Code [dreamsyntax, Dolphin Wiki]
+$Advanced Full Widescreen v5 with UI/GNCP Code [dreamsyntax, Dolphin Wiki]
 045F67A0 C1700000
 045F67A8 44250000
 045F67E0 442F0000
@@ -15,6 +15,7 @@ $Advanced Full Widescreen v5 (beta) with UI/GNCP Code [dreamsyntax, Dolphin Wiki
 045F67F0 C2780000
 04343228 4E800020
 044AB5CC 42F00000
+045F7D4C 40300000
 06519F60 00000034
 3DC08057 3DE03F40
 91EEE098 3DE0BF40
@@ -50,17 +51,16 @@ C0822000 00000000
 *Do not use with Dolphin Widescreen Hack
 *Requires .gncp patches from:
 *https://github.com/ShadowTheHedgehogHacking/Widescreen-ShadowTH
-*All inclusive code for Single Player only!
 ```
 
 
 Example of using the common widescreen code (or this one) without the patched csdFiles
 
 ## Bad
-<img src="https://raw.githubusercontent.com/ShadowTheHedgehogHacking/Widescreen-ShadowTH/main/res/bad.jpg" align="center" />
+<img src="https://raw.githubusercontent.com/ShadowTheHedgehogHacking/Widescreen-ShadowTH/main/workspace/res/bad.jpg" align="center" />
 
 
 Example of using my version of the widescreen code WITH the files:
 
 ## Good
-<img src="https://raw.githubusercontent.com/ShadowTheHedgehogHacking/Widescreen-ShadowTH/main/res/good.jpg" align="center" />
+<img src="https://raw.githubusercontent.com/ShadowTheHedgehogHacking/Widescreen-ShadowTH/main/workspace/res/good.jpg" align="center" />
