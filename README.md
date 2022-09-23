@@ -47,7 +47,6 @@ D0030004 00000000
 C2484334 00000002
 3DC04000 91C22000
 C0822000 00000000
-*Disable Simple Widescreen by LimblessVector if you use this.
 *Do not use with Dolphin Widescreen Hack
 *Requires .gncp patches from:
 *https://github.com/ShadowTheHedgehogHacking/Widescreen-ShadowTH
