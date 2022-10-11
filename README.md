@@ -1,6 +1,7 @@
 # Widescreen-ShadowTH
 Modified files for proper widescreen support in Shadow The Hedgehog (USA GameCube version GUPE8P). 
-Provides widescreen without any UI stretching wierdness
+Provides widescreen without any UI stretching weirdness
+Please note this is already integrated with Reloaded. This is just standalone widescreen if you want to integrate it with your own mod or the original game.
 
 ## Usage
 1. Merge & overwrite files from 'files' with extracted game's 'files'. [You can read how to extract and play/rebuild the game by clicking here.](https://github.com/ShadowTheHedgehogHacking/ShdTH-Reloaded#extraction-of-game--fst-format)
