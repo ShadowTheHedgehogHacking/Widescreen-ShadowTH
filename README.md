@@ -10,7 +10,8 @@ Provides widescreen without any UI stretching weirdness.
 Please note this is already integrated with Reloaded and ShadowSX. This is a standalone widescreen feature if you want to integrate it with your own mod or the original game.
 
 ### ROM Validation
-Please verify the ROM you are attempting to patch is a 1:1 ShadowTheHedgehog GameCube ISO.
+
+Please verify the ROM you are attempting to patch is a 1:1 ShadowTheHedgehog NTSC-U GameCube ISO.
 
 GCZ/WIA/RVZ or any other format than ISO is not supported. Please convert to ISO, then compare your game to the table below.
 
@@ -42,9 +43,9 @@ If you are just patching the original game and won't be making further dol edits
 ### PC
 1. Visit https://shadowthehedgehoghacking.github.io/xdelta-wasm/ or any other xdelta3 patcher of your choice.
 2. Specify your original ISO as the `Source file`.
-3. Specify the `shadow-sidescreen.xdelta` file you downloaded as the `Patch file`.
+3. Specify the `shadow-widescreen.xdelta` file you downloaded as the `Patch file`.
 4. Click `Apply Patch`: It will then 'download' the patched file as `ISO NAME-patched.iso` (nothing is actually uploaded/downloaded, it is all done on-device).
-5. If you run into errors, likely the ISO is wrong hash for the xdelta you downloaded. Double check your original game in `Dolphin Verify` tab.
+5. If you run into errors, likely the ISO is the wrong hash. Double check your original game in `Dolphin Verify` tab.
 
 ### Gecko (Not required if you use the xdelta)
 ```
@@ -107,7 +108,7 @@ Example of using my version of the widescreen code WITH the files:
 
 
 ### Extraction of Game
-1. Get the latest release or dev Dolphin - [Dolphin 2407 or newer recommended](https://dolphin-emu.org/download/)
+1. Get the latest release or dev Dolphin - [Dolphin 2409 or newer recommended](https://dolphin-emu.org/download/)
 2. Open Dolphin
 3. Set game path to your Shadow the Hedgehog NTSC-U ISO
 4. Right-click `Shadow The Hedgehog` in the game list
