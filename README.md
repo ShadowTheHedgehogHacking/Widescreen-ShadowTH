@@ -31,12 +31,13 @@ If you are making your own mod...
 
 If you are just patching the original game and won't be making further dol edits...
 
-1. Use any xdelta3 patcher on the .ISO NTSC-U GameCube version - you're done! No Gecko Codes required, as its embedded in the dol.
+1. Download [shadow-widescreen.xdelta](https://raw.githubusercontent.com/ShadowTheHedgehogHacking/Widescreen-ShadowTH/main/shadow-widescreen.xdelta)
+2. Use any xdelta3 patcher on the .ISO NTSC-U GameCube version - you're done! No Gecko Codes required, as its embedded in the dol.
 
 ### Android
 1. Download and install the [ROM Patcher](https://github.com/btimofeev/UniPatcher/releases/latest)
-2. Place your original ShadowTheHedgehog ROM in ISO format into an accessible folder
-3. Extract the Reloaded release zip you downloaded, and place the `shadow-widescreen.xdelta` somewhere UniPatcher will be able to access it.
+2. Place your original ShadowTheHedgehog NTSC-U ROM in ISO format into an accessible folder
+3. Download and place the `shadow-widescreen.xdelta` somewhere UniPatcher will be able to access it.
 4. Specify the output file & click the pink floating action button.
 5. `ISO NAME [PATCHED].iso` should be created successfully. If you run into errors, likely the ISO is wrong hash, double check your original game.
 
