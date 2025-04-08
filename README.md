@@ -1,17 +1,17 @@
 # Widescreen-ShadowTH
 
 
-Modified files for proper widescreen support in Shadow The Hedgehog (NTSC-U GameCube version GUPE8P).
+Modified files for proper widescreen support in Shadow The Hedgehog.
 
 
-Provides widescreen without any UI stretching weirdness.
+Provides widescreen without any UI stretching weirdness or incorrect overlays.
 
 
-Please note this is already integrated with Reloaded and ShadowSX. This is a standalone widescreen feature if you want to integrate it with your own mod or the original game.
+Please note this is already integrated with Shadow The Hedgehog: Reloaded and Shadow SX. This is a standalone widescreen feature if you want to integrate it with your own mod or the original game.
 
 ### ROM Validation
 
-Please verify the ROM you are attempting to patch is a 1:1 ShadowTheHedgehog NTSC-U GameCube ISO.
+Please verify the ROM you are attempting to patch is a 1:1 Shadow The Hedgehog NTSC-U or PAL GameCube ISO.
 
 GCZ/WIA/RVZ or any other format than ISO is not supported. Please convert to ISO, then compare your game to the table below.
 
@@ -20,6 +20,8 @@ You can get your hashes of your ISO by right clicking your game in Dolphin's gam
 | ROM    | CRC32 Hash    | SHA-1 Hash                               |
 | ------ | ------------- | ---------------------------------------- |
 | NTSC-U | f582cf1e      | 5dc81ad9c97549394e30bedc252bfa37d4db1de0 |
+|  PAL   | db7d8cd9      | 05b34c82c0fe8aa504539e4dfbba89957c7fc788 |
+
 
 
 ## Usage / How to Setup
@@ -31,15 +33,8 @@ If you are making your own mod...
 
 If you are just patching the original game and won't be making further dol edits...
 
-1. Download [shadow-widescreen.xdelta](https://raw.githubusercontent.com/ShadowTheHedgehogHacking/Widescreen-ShadowTH/main/shadow-widescreen.xdelta)
+1. Download `shadow-widescreen-[region].xdelta`
 2. Use any xdelta3 patcher on the .ISO NTSC-U GameCube version - you're done! No Gecko Codes required, as its embedded in the dol.
-
-### Android
-1. Download and install the [ROM Patcher](https://github.com/btimofeev/UniPatcher/releases/latest)
-2. Place your original ShadowTheHedgehog NTSC-U ROM in ISO format into an accessible folder
-3. Download and place the `shadow-widescreen.xdelta` somewhere UniPatcher will be able to access it.
-4. Specify the output file & click the pink floating action button.
-5. `ISO NAME [PATCHED].iso` should be created successfully. If you run into errors, likely the ISO is wrong hash, double check your original game.
 
 ### PC
 1. Visit https://shadowthehedgehoghacking.github.io/xdelta-wasm/ or any other xdelta3 patcher of your choice.
@@ -48,9 +43,18 @@ If you are just patching the original game and won't be making further dol edits
 4. Click `Apply Patch`: It will then 'download' the patched file as `ISO NAME-patched.iso` (nothing is actually uploaded/downloaded, it is all done on-device).
 5. If you run into errors, likely the ISO is the wrong hash. Double check your original game in `Dolphin Verify` tab.
 
+### Android
+1. Download and install the [ROM Patcher](https://github.com/btimofeev/UniPatcher/releases/latest)
+2. Place your original ShadowTheHedgehog NTSC-U ROM in ISO format into an accessible folder
+3. Download and place the `shadow-widescreen-[region].xdelta` somewhere UniPatcher will be able to access it.
+4. Specify the output file & click the pink floating action button.
+5. `ISO NAME [PATCHED].iso` should be created successfully. If you run into errors, likely the ISO is wrong hash, double check your original game.
+
 ### Gecko (Not required if you use the xdelta)
+
+#### NTSC-U
 ```
-$Advanced Full Widescreen v5 with UI/GNCP Code [dreamsyntax, Dolphin Wiki]
+$Advanced Full Widescreen v5 with UI/GNCP Code for NTSC-U [dreamsyntax, Dolphin Wiki]
 045F67A0 C1700000
 045F67A8 44250000
 045F67E0 442F0000
@@ -90,7 +94,93 @@ D0030004 00000000
 C2484334 00000002
 3DC04000 91C22000
 C0822000 00000000
-*Do not use with Dolphin Widescreen Hack
+*Requires .gncp patches from:
+*https://github.com/ShadowTheHedgehogHacking/Widescreen-ShadowTH
+```
+
+#### PAL Version
+```
+$Advanced Full Widescreen v5 with UI/GNCP Code for PAL [dreamsyntax, Dolphin Wiki]
+C24957AC 00000003
+3DC03F40 91C22000
+C2222000 EC110032
+D0030004 00000000
+C2485384 00000002
+3DC04000 91C22000
+C0822000 00000000
+C2306564 00000006
+3DC08057 3DE03F40
+91EEF158 3DE0BF40
+91EEF144 4E800421
+3DE03F80 91EEF158
+3DE0BF80 91EEF144
+60000000 00000000
+C2036764 00000006
+3DC08057 3DE03F40
+91EEF158 3DE0BF40
+91EEF144 4E800421
+3DE03F80 91EEF158
+3DE0BF80 91EEF144
+60000000 00000000
+C23640D4 00000006
+3DC08057 3DE03F40
+91EEF158 3DE0BF40
+91EEF144 4E800421
+3DE03F80 91EEF158
+3DE0BF80 91EEF144
+60000000 00000000
+C2363FC8 00000006
+3DC08057 3DE03F40
+91EEF158 3DE0BF40
+91EEF144 4E800421
+3DE03F80 91EEF158
+3DE0BF80 91EEF144
+60000000 00000000
+C20BCE3C 00000006
+3DC08057 3DE03F40
+91EEF158 3DE0BF40
+91EEF144 4E800421
+3DE03F80 91EEF158
+3DE0BF80 91EEF144
+60000000 00000000
+C2346BA0 00000006
+3DC08057 3DE03F40
+91EEF158 3DE0BF40
+91EEF144 4E800421
+3DE03F80 91EEF158
+3DE0BF80 91EEF144
+60000000 00000000
+04344030 4E800020
+045F7828 C1700000
+045F7830 44250000
+045F7858 C2600000
+045F7868 442F0000
+045F7878 C2780000
+044AC62C 42F00000
+045F8DD4 40300000
+C20BCCC0 00000008
+C3629918 81E10094
+3E00800B 6210C898
+7C0F8000 40820028
+3DE08057 61EF6FDC
+81EF0000 2C0F0002
+3DE0804A 61EFC62C
+C36F0000 41820008
+FF60D850 00000000
+C2062428 00000006
+3DC08057 3DE03F40
+91EEF158 3DE0BF40
+91EEF144 4E800421
+3DE03F80 91EEF158
+3DE0BF80 91EEF144
+60000000 00000000
+C20623D0 00000006
+3DC08057 3DE03F40
+91EEF158 3DE0BF40
+91EEF144 4E800421
+3DE03F80 91EEF158
+3DE0BF80 91EEF144
+60000000 00000000
 *Requires .gncp patches from:
 *https://github.com/ShadowTheHedgehogHacking/Widescreen-ShadowTH
 ```
@@ -109,9 +199,9 @@ Example of using my version of the widescreen code WITH the files:
 
 
 ### Extraction of Game
-1. Get the latest release or dev Dolphin - [Dolphin 2409 or newer recommended](https://dolphin-emu.org/download/)
+1. Get the latest release or dev Dolphin - [Dolphin 2503 or newer recommended](https://dolphin-emu.org/download/)
 2. Open Dolphin
-3. Set game path to your Shadow the Hedgehog NTSC-U ISO
+3. Set game path to your Shadow the Hedgehog ISO
 4. Right-click `Shadow The Hedgehog` in the game list
 5. Select `Properties`
 6. Select `Filesystem` Tab
