@@ -61,7 +61,7 @@ If you are just patching the original game and won't be making further dol edits
 
 ### Android
 1. Download and install the [ROM Patcher](https://github.com/btimofeev/UniPatcher/releases/latest)
-2. Place your original ShadowTheHedgehog NTSC-U ROM in ISO format into an accessible folder
+2. Place your original Shadow the Hedgehog ROM in ISO format into an accessible folder
 3. Download and place the `shadow-widescreen-[region].xdelta` somewhere UniPatcher will be able to access it.
 4. Specify the output file & click the pink floating action button.
 5. `ISO NAME [PATCHED].iso` should be created successfully. If you run into errors, likely the ISO is wrong hash, double check your original game.
