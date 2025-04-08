@@ -23,6 +23,15 @@ You can get your hashes of your ISO by right clicking your game in Dolphin's gam
 |  PAL   | db7d8cd9      | 05b34c82c0fe8aa504539e4dfbba89957c7fc788 |
 
 
+### Patched ROM Output Validation
+
+Below is the expected outputs after patching your original rom to the widescreen version.
+
+| ROM    | CRC32 Hash    | SHA-1 Hash                               |
+| ------ | ------------- | ---------------------------------------- |
+| NTSC-U | e7bba31d      | 77bf39a056f9ad0fd06d1d8fbc588d1d6ba14aa5 |
+|  PAL   | d213e6a0      | 14ba52934be08fc8d49cddd57a0b1ad0ddb16930 |
+
 
 ## Usage / How to Setup
 
@@ -33,8 +42,15 @@ If you are making your own mod...
 
 If you are just patching the original game and won't be making further dol edits...
 
-1. Download `shadow-widescreen-[region].xdelta`
-2. Use any xdelta3 patcher on the .ISO NTSC-U GameCube version - you're done! No Gecko Codes required, as its embedded in the dol.
+1. Download the patch for the region you are using.
+
+
+[shadow-widescreen-ntsc-u.xdelta](https://raw.githubusercontent.com/ShadowTheHedgehogHacking/Widescreen-ShadowTH/main/shadow-widescreen-ntsc-u.xdelta)
+
+
+[shadow-widescreen-pal.xdelta](https://raw.githubusercontent.com/ShadowTheHedgehogHacking/Widescreen-ShadowTH/main/shadow-widescreen-pal.xdelta)
+
+2. Use any xdelta3 patcher on your .ISO format game - you're done! No Gecko Codes required, as its embedded in the dol.
 
 ### PC
 1. Visit https://shadowthehedgehoghacking.github.io/xdelta-wasm/ or any other xdelta3 patcher of your choice.
